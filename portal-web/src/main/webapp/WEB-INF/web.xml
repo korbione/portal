@@ -18,7 +18,7 @@
 
     <servlet-mapping>
         <servlet-name>springGwtRemoteServiceServlet</servlet-name>
-        <url-pattern>/PortalEntryPoint/springGwtServices/*</url-pattern>
+        <url-pattern>/portal/*</url-pattern>
     </servlet-mapping>
 
     <listener>

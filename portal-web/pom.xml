@@ -19,24 +19,27 @@
         <dependency>
             <groupId>com.dakor</groupId>
             <artifactId>portal-ui</artifactId>
-            <version>${pom.parent.version}</version>
         </dependency>
 
+        <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-servlet</artifactId>
             <version>${gwt.version}</version>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
@@ -44,7 +47,13 @@
             <artifactId>spring4gwt</artifactId>
             <version>0.0.1</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/webapp/lib/spring4gwt-0.0.1.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/spring4gwt-0.0.1.jar</systemPath>
+        </dependency>
+
+        <!-- Logging -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
         </dependency>
     </dependencies>
 
@@ -63,8 +72,8 @@
                 </executions>
                 <configuration>
                     <runTarget>index.html</runTarget>
-                    <module>com.dakor.portal.PortalEntryPoint</module>
-                    <draftCompile>true</draftCompile>
+                    <module>com.dakor.portal.Portal</module>
+                    <draftCompile>false</draftCompile>
                     <extraJvmArgs>-Xmx256M -Xss1024k</extraJvmArgs>
                 </configuration>
             </plugin>
@@ -75,6 +84,7 @@
                 <version>2.4</version>
                 <configuration>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+                    <warName>${parent.artifactId}</warName>
                 </configuration>
             </plugin>
         </plugins>
