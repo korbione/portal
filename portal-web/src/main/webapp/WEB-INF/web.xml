@@ -18,7 +18,7 @@
 
     <servlet-mapping>
         <servlet-name>springGwtRemoteServiceServlet</servlet-name>
-        <url-pattern>/portal/*</url-pattern>
+        <url-pattern>/com.dakor.portal.Portal/portal/*</url-pattern>
     </servlet-mapping>
 
     <listener>
