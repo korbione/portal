@@ -2,6 +2,7 @@ package com.dakor.portal.client;
 
 import com.dakor.portal.client.login.ILoginView;
 import com.dakor.portal.client.login.LoginView;
+import com.dakor.portal.client.main.MainPanel;
 import com.dakor.portal.model.LoginModel;
 import com.google.gwt.core.client.Callback;
 import com.google.gwt.core.client.EntryPoint;

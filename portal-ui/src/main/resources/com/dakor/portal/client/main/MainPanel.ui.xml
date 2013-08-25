@@ -1,0 +1,22 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:portal-menu='urn:import:com.dakor.portal.client.menu'
+             xmlns:media='urn:import:com.google.gwt.media.client'>
+
+    <g:HTMLPanel>
+        <g:HorizontalPanel width="100%" height="100%" spacing="10">
+            <portal-menu:MenuView/>
+
+            <g:VerticalPanel width="100%">
+                <g:Label ui:field="welcomeLabel" text="test label"/>
+                <g:cell width="100%" height="100%">
+                    <media:Video ui:field="videoPlayer" width="640px" height="480px" controls="true"/>
+<!--                    <video width="100%" height="100%" controls="controls" preload="auto">
+                        <source src="file://e:/videoclips/Mickel Jackson - Thriller.avi" type='video/mp4'/>
+                    </video>-->
+                </g:cell>
+            </g:VerticalPanel>
+        </g:HorizontalPanel>
+    </g:HTMLPanel>
+
+</ui:UiBinder>

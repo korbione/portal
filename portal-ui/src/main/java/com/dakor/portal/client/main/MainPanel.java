@@ -1,6 +1,7 @@
-package com.dakor.portal.client;
+package com.dakor.portal.client.main;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.media.client.Video;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
@@ -19,8 +20,14 @@ public class MainPanel extends Composite {
     @UiField
     Label welcomeLabel;
 
+    @UiField(provided = true)
+    Video videoPlayer;
+
     public MainPanel() {
+        videoPlayer = Video.createIfSupported();
         initWidget(uiBinder.createAndBindUi(this));
+
+        videoPlayer.setSrc("e:\\videoclips\\oceans-clip.mp4");
     }
 
     public void setWelcomeLabel(String value) {

@@ -1,0 +1,23 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style>
+        .menu-item {
+            height: 50px;
+            line-height: 50px;
+            text-align: right;
+            vertical-align: middle;
+        }
+    </ui:style>
+
+    <g:HTMLPanel width="150px">
+        <div align="right">
+            <g:VerticalPanel>
+                <g:Label text="Menu#1" styleName="{style.menu-item}"/>
+                <g:Label text="Menu#2" styleName="{style.menu-item}"/>
+                <g:Label text="Video" styleName="{style.menu-item}"/>
+            </g:VerticalPanel>
+        </div>
+    </g:HTMLPanel>
+
+</ui:UiBinder>
