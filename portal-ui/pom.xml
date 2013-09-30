@@ -20,6 +20,10 @@
             <groupId>com.dakor</groupId>
             <artifactId>portal-shared</artifactId>
         </dependency>
+		<dependency>
+			<groupId>com.dakor</groupId>
+			<artifactId>portal-rest</artifactId>
+		</dependency>
 
         <!-- GWT -->
         <dependency>

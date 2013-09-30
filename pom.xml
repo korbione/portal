@@ -11,6 +11,7 @@
 
     <modules>
         <module>portal-shared</module>
+        <module>portal-rest</module>
         <module>portal-ui</module>
         <module>portal-web</module>
     </modules>
@@ -20,6 +21,7 @@
         <gwt.version>2.5.1</gwt.version>
         <log4j.version>1.2.16</log4j.version>
         <junit.version>4.10</junit.version>
+        <jersey.version>1.17</jersey.version>
     </properties>
 
     <dependencyManagement>
@@ -28,6 +30,11 @@
             <dependency>
                 <groupId>com.dakor</groupId>
                 <artifactId>portal-shared</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dakor</groupId>
+                <artifactId>portal-rest</artifactId>
                 <version>${version}</version>
             </dependency>
             <dependency>
